@@ -1,0 +1,13 @@
+[Unit]
+Description=Network Chrome refresh server
+After=network.target
+
+[Service]
+ExecStart=/home/pi/refresh_server/server.py
+Type=simple
+User=pi
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+Alias=sshd.service
