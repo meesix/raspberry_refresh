@@ -3,7 +3,7 @@ Description=Network Chrome refresh server
 After=network.target
 
 [Service]
-ExecStart=/home/pi/refresh_server/server.py
+ExecStart=/home/pi/raspberry_refresh/server.py
 Type=simple
 User=pi
 Restart=always
